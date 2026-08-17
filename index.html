@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKED SKIN | Inclusive Nude Undergarments</title>
+    <meta name="description"
+        content="Discover ultra-refined, inclusive nude undergarments. Seamless bras and second-skin panties engineered to melt into your natural shade.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="relative min-h-screen">
+
+    <!-- 1. Floating Capsule Header -->
+    <header class="fixed top-4 left-0 right-0 z-40 mx-auto max-w-7xl px-4 w-full">
+        <div
+            class="bg-porcelain/80 backdrop-blur-md rounded-full shadow-sm border border-cashmere/50 px-6 py-4 flex items-center justify-between">
+            <!-- Left: Logo -->
+            <a href="/" class="text-espresso font-display font-bold tracking-widest text-xl">
+                 FITSKIN.
+            </a>
+
+            <!-- Center Navigation (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-sm font-medium text-espresso/80 hover:text-espresso transition-colors">Seamless
+                    Bras</a>
+                <a href="#" class="text-sm font-medium text-espresso/80 hover:text-espresso transition-colors">Everyday
+                    Thongs</a>
+                <a href="#" class="text-sm font-medium text-espresso/80 hover:text-espresso transition-colors">Sculpt &
+                    Shape</a>
+                <a href="#"
+                    class="text-sm font-medium text-mocha hover:text-espresso transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-px after:bg-mocha/50">Nude
+                    Shade Guide</a>
+            </nav>
+
+            <!-- Right: Actions -->
+            <div class="flex items-center space-x-6">
+                <button
+                    class="hidden lg:block text-sm font-medium text-espresso/80 hover:text-espresso transition-colors">
+                    USD $
+                </button>
+                <button class="text-espresso/80 hover:text-espresso transition-colors" aria-label="Wishlist">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="cart-trigger"
+                    class="flex items-center space-x-2 text-espresso hover:text-mocha transition-colors group"
+                    aria-label="Cart">
+                    <div class="relative">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        <span
+                            class="absolute -top-1.5 -right-2 bg-mocha text-porcelain text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center group-hover:bg-espresso transition-colors">2</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Stage -->
+    <main>
+        <section class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-12 overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <!-- Using a high-quality placeholder image for the hero representing soft organic tones and inclusive aesthetic -->
+                <img src="/img/hero-bg.webp" alt="Diverse female models in nude tones"
+                    class="w-full h-full object-cover object-center opacity-90">
+                <div class="absolute inset-0 bg-gradient-to-r from-porcelain/90 via-porcelain/60 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 gap-12">
+                <div class="max-w-full">
+                    <span
+                        class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-mocha uppercase bg-sand rounded-full">New
+                        Arrival • The Second Skin Collection</span>
+                    <h1 class="text-5xl lg:text-7xl font-display font-bold text-espresso leading-[1.1] mb-6">
+                        Your Skin,Celebrated. <br> <span class="text-mocha italic font-normal">Seamless Support </span>
+                    </h1>
+                    <p class="text-lg text-espresso/80 mb-10 max-w-xl font-body leading-relaxed">
+                        Invisible under any outfit. Featherlight, wire-free microfiber engineered to melt precisely into
+                        your natural shade. No seams, no digging, just you.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bounce-click px-8 py-4 bg-espresso text-porcelain rounded-2xl font-medium shadow-xl shadow-mocha/20 hover:bg-mocha transition-all">
+                            Shop Your Nude Shade
+                        </button>
+                        <button
+                            class="bounce-click px-8 py-4 bg-white/50 backdrop-blur-sm text-espresso border border-cashmere rounded-2xl font-medium hover:bg-sand transition-all">
+                            Explore Fabric Tech
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Inclusive Silhouette Matrix & 4. Signature Cards -->
+        <section class="py-24 bg-porcelain" id="shop">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-semibold text-espresso mb-4">Find Your Flawless Fit</h2>
+                    <p class="text-espresso/70 max-w-2xl mx-auto">Precision engineering meets organic softness. Select a
+                        silhouette to see it in all 6 signature shades.</p>
+                </div>
+
+
+
+                <!-- Tab Contents -->
+
+                <!-- Plunge Bras Tab -->
+                <div class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img1.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">The Invisible Plunge
+                                </h3>
+                                <span class="text-mocha font-medium">$58</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img2.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Everyday T-Shirt Bra
+                                </h3>
+                                <span class="text-mocha font-medium">$62</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+                    
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img3.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Sculpting Balconette
+                                </h3>
+                                <span class="text-mocha font-medium">$68</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img4.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Seamless Wireless Lounge
+                                </h3>
+                                <span class="text-mocha font-medium">$45</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img5.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Microfiber Lift Bra
+                                </h3>
+                                <span class="text-mocha font-medium">$55</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img6.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">The Second Skin Demi
+                                </h3>
+                                <span class="text-mocha font-medium">$60</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img7.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Featherlight Push-Up
+                                </h3>
+                                <span class="text-mocha font-medium">$65</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img29.avif" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Ultimate Support Full Coverage
+                                </h3>
+                                <span class="text-mocha font-medium">$70</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img8.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Breathable Mesh Bralette
+                                </h3>
+                                <span class="text-mocha font-medium">$40</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img21.jpg" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Smooth Contour Bra
+                                </h3>
+                                <span class="text-mocha font-medium">$58</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+                     <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col">
+                        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand">
+                            <img src="img/img39.avif" alt="Plunge Bra Front"
+                                class="front-img absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10">
+                        </div>
+                        <div class="">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-display font-semibold text-lg text-espresso">Satin Trim Longline
+                                </h3>
+                                <span class="text-mocha font-medium">$75</span>
+                            </div>
+                            <p class="text-sm text-espresso/60 mb-4">Shade: <span class="font-medium text-espresso">Fair
+                                    Porcelain</span></p>
+
+                            <!-- Sizes -->
+                            <div class="size-container flex gap-2 overflow-x-auto hide-scrollbar pb-2 mb-4">
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">32A</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-espresso text-porcelain transition-colors">34B</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">36C</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">38D</button>
+                                <button
+                                    class="size-pill shrink-0 px-3 py-1.5 rounded-2xl text-xs font-medium bg-sand text-espresso transition-colors">40DD</button>
+                            </div>
+
+                            <button
+                                class="bounce-click w-full py-3 bg-espresso text-porcelain rounded-2xl font-medium hover:bg-mocha transition-colors">Add
+                                to Bag</button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Card 3 -->
+                    <div
+                        class="product-card group bg-white rounded-2xl border border-cashmere p-4 hover-lift relative overflow-hidden flex flex-col hidden lg:flex">
+                        <div
+                            class="relative w-full aspect-[4/5] rounded-xl overflow-hidden mb-4 bg-sand flex items-center justify-center">
+                            <div class="text-espresso/50 font-medium text-sm">More coming soon</div>
+                        </div>
+                        <div class="mt-auto">
+                            <div class="h-6 bg-sand rounded w-3/4 mb-2"></div>
+                            <div class="h-4 bg-sand rounded w-1/2 mb-6"></div>
+                            <div class="h-12 bg-sand rounded-2xl w-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <!-- 5. "The No-Show Tech" -->
+        <section class="py-0 bg-white">
+            <div class="grid grid-cols-1 lg:grid-cols-2 h-full min-h-[600px]">
+                <!-- Left: Visual -->
+                <div class="relative h-[400px] lg:h-auto order-2 lg:order-1">
+                    <img src="img/img7.avif" alt="Fabric Macro Detail"
+                        class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-espresso/40 to-transparent"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-porcelain">
+                        <p class="text-sm font-semibold tracking-widest uppercase mb-2">Macro Inspection</p>
+                        <p class="text-xl font-display">Zero stitching. Ultrasonic welded seams.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="p-12 lg:p-24 flex flex-col justify-center order-1 lg:order-2 bg-sand/30">
+                    <h2 class="text-4xl font-display font-semibold text-espresso mb-12">The No-Show Architecture</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <!-- Feature 1 -->
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-cashmere flex items-center justify-center mb-4 text-espresso">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-display font-semibold text-lg text-espresso mb-2">Laser-Cut Raw Edges</h4>
+                            <p class="text-sm text-espresso/70 leading-relaxed">Precision cut to lay perfectly flat
+                                against the skin, eliminating any transition bumps under clothing.</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-cashmere flex items-center justify-center mb-4 text-espresso">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-display font-semibold text-lg text-espresso mb-2">0% Visible Panty Lines
+                            </h4>
+                            <p class="text-sm text-espresso/70 leading-relaxed">Engineered without elastic bands or
+                                bulky seams to ensure a perfectly smooth silhouette.</p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-cashmere flex items-center justify-center mb-4 text-espresso">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-display font-semibold text-lg text-espresso mb-2">360° Adaptive Stretch</h4>
+                            <p class="text-sm text-espresso/70 leading-relaxed">High-recovery microfiber that adapts to
+                                your body's micro-movements without stretching out.</p>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-cashmere flex items-center justify-center mb-4 text-espresso">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-display font-semibold text-lg text-espresso mb-2">Butter-Soft Bamboo Lining
+                            </h4>
+                            <p class="text-sm text-espresso/70 leading-relaxed">Breathable, naturally anti-microbial
+                                gussets to keep you cool and fresh all day long.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Real Customer Reviews -->
+        <section class="py-24 bg-sand">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-semibold text-espresso mb-4">The NAKED SKIN Community</h2>
+                    <p class="text-espresso/70 max-w-2xl mx-auto">Real women. Real skin. Real reviews.</p>
+                </div>
+
+                <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                    <!-- Review 1 -->
+                    <div class="break-inside-avoid bg-white rounded-2xl p-6 border border-cashmere shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://placehold.co/150x150/E8D8CD/5C4033?text=Sarah+M." alt="Customer"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-semibold text-espresso">Sarah M.</h4>
+                                <div class="flex text-ochre text-sm mt-1">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-espresso/80 text-sm italic mb-4">"I have finally found a nude that matches my
+                            olive undertones perfectly. The plunge bra is literally invisible under my thinnest white
+                            t-shirts."</p>
+                        <div
+                            class="bg-porcelain rounded-xl p-3 text-xs text-espresso/70 flex justify-between items-center">
+                            <span>Purchased: <strong class="text-espresso">Tan Shade</strong></span>
+                            <span>Size: <strong class="text-espresso">34C</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="break-inside-avoid bg-white rounded-2xl p-6 border border-cashmere shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-cashmere flex items-center justify-center text-espresso font-bold">
+                                EJ</div>
+                            <div>
+                                <h4 class="font-semibold text-espresso">Elena J.</h4>
+                                <div class="flex text-ochre text-sm mt-1">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-espresso/80 text-sm italic mb-4">"The microfiber feels like butter. I threw away
+                            all my old digging wire bras. This is a game changer for long office days."</p>
+                        <div
+                            class="bg-porcelain rounded-xl p-3 text-xs text-espresso/70 flex justify-between items-center">
+                            <span>Purchased: <strong class="text-espresso">Fair Shade</strong></span>
+                            <span>Size: <strong class="text-espresso">32B</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="break-inside-avoid bg-white rounded-2xl p-6 border border-cashmere shadow-sm">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="https://placehold.co/150x150/E8D8CD/5C4033?text=Maya+T." alt="Customer"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <h4 class="font-semibold text-espresso">Maya T.</h4>
+                                <div class="flex text-ochre text-sm mt-1">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="text-espresso/80 text-sm italic mb-4">"So happy to see true inclusivity in shades. The
+                            'Deep' shade blends seamlessly into my skin. The hold is fantastic without any pinch."</p>
+                        <div
+                            class="bg-porcelain rounded-xl p-3 text-xs text-espresso/70 flex justify-between items-center">
+                            <span>Purchased: <strong class="text-espresso">Deep Shade</strong></span>
+                            <span>Size: <strong class="text-espresso">38D</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="bg-espresso text-porcelain pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-16 border-b border-white/10 pb-16">
+                <div class="col-span-2 md:col-span-2 pr-8">
+                    <div class="font-display font-bold tracking-widest text-2xl mb-6">NAKED SKIN.</div>
+                    <p class="text-porcelain/60 text-sm leading-relaxed mb-6">Redefining nude. Our mission is to
+                        celebrate every skin tone with zero-compromise comfort, sustainable fabrics, and
+                        precision-engineered silhouettes.</p>
+                    <div class="flex space-x-4">
+                        <div
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors cursor-pointer">
+                            <span class="sr-only">Insta</span>IG
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors cursor-pointer">
+                            <span class="sr-only">TikTok</span>TT
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4 text-white">Shop</h5>
+                    <ul class="space-y-3 text-sm text-porcelain/60">
+                        <li><a href="#" class="hover:text-white transition-colors">All Bras</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Panties</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bodysuits</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bundles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4 text-white">Support</h5>
+                    <ul class="space-y-3 text-sm text-porcelain/60">
+                        <li><a href="#" class="hover:text-white transition-colors">Find Your Size</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Shade Guide</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4 text-white">About</h5>
+                    <ul class="space-y-3 text-sm text-porcelain/60">
+                        <li><a href="#" class="hover:text-white transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-porcelain/40">
+                <p>&copy; 2026 Naked Skin. All rights reserved.</p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                            </path>
+                        </svg> 256-bit SSL Secure</span>
+                    <span>Discreet Packaging</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS & DRAWERS -->
+
+    <!-- Welcome Newsletter Modal -->
+    <div id="welcome-modal"
+        class="fixed inset-0 z-50  flex items-center justify-center p-4 bg-espresso/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-500">
+        <div id="welcome-modal-content"
+            class="bg-white rounded-2xl overflow-hidden max-w-xl w-full flex flex-col scale-95 translate-y-4 transition-all duration-500 delay-100 relative shadow-2xl">
+            <!-- Close Button -->
+            <button id="close-modal"
+                class="absolute top-4 right-4 bg-espresso/80 text-porcelain hover:bg-espresso rounded-full w-8 h-8 flex items-center justify-center z-10 transition-colors"
+                aria-label="Close">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Hero Image -->
+            <div class="w-full h-[350px] relative bg-sand">
+                <img src="img/welcome-hero.jpg" alt="Welcome to Naked Skin"
+                    class="absolute inset-0 w-full h-full object-cover">
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 md:p-12 text-center flex flex-col items-center bg-porcelain/30">
+                <p class="text-espresso font-medium text-[15px] md:text-base leading-relaxed mb-6">
+                    You've spent years compromising on fit. We'll spend our emails making up for it: new releases,
+                    limited runs, and the occasional well-kept secret.
+                </p>
+
+                <p class="text-espresso font-medium mb-8">
+                    15% off your first order, as a start.
+                </p>
+
+                <div class="w-full max-w-sm flex flex-col gap-6">
+                    <input type="email" placeholder="E-mail"
+                        class="w-full bg-transparent border-0 border-b border-cashmere px-0 py-2 text-sm text-espresso focus:outline-none focus:ring-0 focus:border-espresso transition-colors placeholder:text-espresso/60">
+
+                    <button id="claim-fit"
+                        class="w-full py-4 bg-[#222] text-white font-medium text-sm tracking-widest hover:bg-black transition-colors">
+                        CONSIDER ME IN
+                    </button>
+                </div>
+
+                <p class="text-[11px] text-espresso/60 mt-6">
+                    We don't spam. Unsubscribe at any time.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-drawer-overlay"
+        class="fixed inset-0 bg-espresso/20 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    </div>
+    <div id="cart-drawer"
+        class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-porcelain z-50 shadow-2xl translate-x-full transition-transform duration-500 ease-in-out flex flex-col border-l border-cashmere">
+        <div class="p-6 border-b border-cashmere flex justify-between items-center bg-white">
+            <h3 class="font-display font-semibold text-xl text-espresso">Your Bag (2)</h3>
+            <button id="close-cart" class="text-espresso/50 hover:text-espresso p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Free shipping bar -->
+        <div class="p-4 bg-sand border-b border-cashmere text-center">
+            <p class="text-sm text-espresso font-medium mb-2">You're <span class="text-mocha">$18</span> away from Free
+                Shipping!</p>
+            <div class="w-full bg-cashmere/50 rounded-full h-1.5 mb-1">
+                <div class="bg-mocha h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-6 space-y-6">
+            <!-- Cart Item -->
+            <div class="flex gap-4">
+                <img src="https://placehold.co/800x1000/FAF8F5/5C4033?text=Plunge+Bra+Front" alt="Bra"
+                    class="w-20 h-24 object-cover rounded-xl border border-cashmere">
+                <div class="flex-1 flex flex-col">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-display font-semibold text-espresso">The Invisible Plunge</h4>
+                        <button class="text-espresso/40 hover:text-mocha"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                </path>
+                            </svg></button>
+                    </div>
+                    <p class="text-xs text-espresso/60 mb-1">Shade: Sand | Size: 34B</p>
+                    <div class="mt-auto flex justify-between items-end">
+                        <div class="flex items-center border border-cashmere rounded-full overflow-hidden">
+                            <button class="px-3 py-1 bg-white hover:bg-sand text-espresso transition-colors">-</button>
+                            <span class="px-2 text-sm text-espresso font-medium bg-white">1</span>
+                            <button class="px-3 py-1 bg-white hover:bg-sand text-espresso transition-colors">+</button>
+                        </div>
+                        <span class="font-medium text-espresso">$58.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border-t border-cashmere">
+            <div class="flex justify-between items-center mb-4 text-espresso font-semibold text-lg">
+                <span>Subtotal</span>
+                <span>$58.00</span>
+            </div>
+            <p class="text-xs text-espresso/50 mb-6 text-center">Taxes and shipping calculated at checkout.</p>
+            <button
+                class="bounce-click w-full py-4 bg-espresso text-porcelain rounded-2xl font-display font-semibold text-lg hover:bg-mocha transition-colors shadow-lg shadow-mocha/10">Secure
+                Checkout</button>
+        </div>
+    </div>
+
+    <!-- Initialize Tailwind config for CDN (fallback in case local build is tricky, but we are using local build) -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

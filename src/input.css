@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-porcelain: #FAF8F5;
+  --color-sand: #F2EBE4;
+  --color-cashmere: #E8D8CD;
+  --color-mocha: #5C4033;
+  --color-espresso: #2B1E1A;
+  --color-ochre: #DDA15E;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-porcelain text-espresso font-body antialiased selection:bg-cashmere selection:text-espresso;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+}
+
+/* Custom Utilities for smooth animations & aesthetics */
+@layer utilities {
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-1.5 hover:shadow-xl hover:shadow-mocha/10;
+  }
+  .bounce-click {
+    @apply active:scale-95 transition-transform duration-150;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
